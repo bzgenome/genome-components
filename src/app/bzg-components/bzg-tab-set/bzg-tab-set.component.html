@@ -1,0 +1,8 @@
+<div class="bzg-tab-set">
+  <ul class="bzg-tab-set__btn" [ngClass]="'bzg-tab-set__bzg-tab--'+type">
+    <li *ngFor="let tab of tabs" (click)="selectTab(tab)" [class.active]="tab.active">
+      <a href="javascript:;">{{tab.displayName}}</a>
+    </li>
+  </ul>
+</div>
+<ng-content></ng-content>

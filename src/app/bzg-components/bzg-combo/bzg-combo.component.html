@@ -1,0 +1,26 @@
+<div class="bzg-combo">
+    <input #inputField
+           class="{{inputClass}}"
+           type="text"
+           placeholder="{{inputPlaceholder}}"
+           [(ngModel)]="currVal"
+           (keydown)="onKeyDown($event)"
+           (blur)="onFieldBlur($event)"
+           (focus)="onFieldFocus()">
+
+    <div class="bzg-combo__icons">
+        <i *ngIf="loading" class="{{loadingIconClass}}"></i>
+        <i *ngIf="!loading && hideList" (click)="onTriggerClick()" class="{{triggerIconClass}}"></i>
+        <i *ngIf="!loading && !hideList" class="{{triggerIconClass}}--up"></i>
+    </div>
+
+    <div class="bzg-combo__list" *ngIf="data && !hideList" (mouseenter)="onMouseEnterList($event)"
+         (mouseleave)="onMouseLeaveList($event)">
+        <div class="bzg-combo__list__no-matches" *ngIf="noMatchesText && data.length == 0">{{noMatchesText}}</div>
+        <div *ngFor="let item of data;let index = index;"
+             [ngClass]="{'bzg-combo__list__item': true, 'bzg-combo__list__item--marked': isMarked(item), 'bzg-combo__list__item--disabled': isDisabled(item)}"
+             (click)="onItemClick(index, item)">
+            {{getDisplayValue(item)}}
+        </div>
+    </div>
+</div>

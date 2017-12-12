@@ -1,0 +1,31 @@
+$break-large: 1024px;
+$tab-primary-color: #293843;
+.bzg-step-set {
+  height: 59px;
+  overflow: hidden;
+
+  &__current {
+    padding: 0;
+    display: flex;
+    margin: 0;
+    list-style: none;
+    border-bottom: 1px solid #e3e3e3;
+    &__display-name {
+      font-size: 77.5%;
+      color: $tab-primary-color;
+      padding: 1.3rem;
+      display: block;
+      text-decoration: none;
+    }
+  }
+}
+
+@media only screen and (min-width: $break-large) {
+  ul.bzg-step-set__btn {
+    li {
+      padding: .5em 1em .1em 1em;
+      text-transform: none;
+      flex: none;
+    }
+  }
+}
