@@ -60,3 +60,8 @@ import { AppComponent } from './app.component';
 })
 export class AppModule { }
 ```
+
+
+```html
+<script src="https://unpkg.com/bzg-components@0.0.4/bzg-components.js"></script>
+```
