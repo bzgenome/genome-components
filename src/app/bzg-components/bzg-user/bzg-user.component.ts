@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'bz-bzg-user',
+  selector: 'bzg-user',
   templateUrl: './bzg-user.component.html',
   styleUrls: ['./bzg-user.component.scss']
 })

@@ -1,5 +1,4 @@
 import {Component, EventEmitter, Inject, Input, OnInit, Output} from '@angular/core';
-import {Company} from "../../common/models/company";
 
 @Component({
     selector: 'bzg-button',
@@ -8,12 +7,12 @@ import {Company} from "../../common/models/company";
 })
 export class BzgButtonComponent implements OnInit {
 
-    @Output() onClick: EventEmitter<any>;
+    @Output() click: EventEmitter<any>;
     @Input() iconClass?: string;
     @Input() text?: string;
 
     constructor(@Inject('genomeConfig') private config: any) {
-        this.onClick = new EventEmitter<any>();
+        this.click = new EventEmitter<any>();
     }
 
     ngOnInit() {
@@ -21,7 +20,7 @@ export class BzgButtonComponent implements OnInit {
     }
 
     public triggerClick() {
-        this.onClick.emit();
+        this.click.emit();
     }
 
     public getIconClass() {

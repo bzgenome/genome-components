@@ -1,11 +1,11 @@
-
-.bz-user {
+@import '../variables.scss';
+.bzg-user {
   align-items: center;
   display: flex;
 }
 
-.bz-user__info {
-  margin-right: $bz-space-inline-m;
+.bzg-user__info {
+  margin-right: $bzg-space-inline-m;
 
   > p {
     color: $white-color;
@@ -17,12 +17,12 @@
     }
 
     &:last-child {
-      font-weight: $bz-font-weight-light;
+      font-weight: $bzg-font-weight-light;
     }
   }
 }
 
-.bz-user__avatar {
+.bzg-user__avatar {
   align-items: center;
   background-color: rgba(255, 255, 255, .2);
   border: 1px solid rgba(255, 255, 255, .7);
@@ -40,18 +40,18 @@
   }
 }
 
-.bz-user__avatar-label {
+.bzg-user__avatar-label {
   color: $white-color;
 }
 
-.bz-nav-panel {
+.bzg-nav-panel {
   background-color: $white-color;
-  border-radius: $bz-border-radius-m;
-  box-shadow: $bz-shadow-xs;
+  border-radius: $bzg-border-radius-m;
+  box-shadow: $bzg-shadow-xs;
   color: $white-color;
   display: none;
   min-width: 18rem;
-  padding: $bz-space-inset-s;
+  padding: $bzg-space-inset-s;
   position: absolute;
   right: 0;
   top: 100%;
@@ -63,7 +63,7 @@
 
   > li > a {
     display: block;
-    padding: $bz-space-inset-squish-s;
+    padding: $bzg-space-inset-squish-s;
     text-decoration: none;
 
     &:focus,
