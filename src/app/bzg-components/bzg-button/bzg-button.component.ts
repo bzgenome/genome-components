@@ -31,7 +31,7 @@ export class BzgButtonComponent implements OnInit {
         return this.text ? this.text : false;
     }
 
-    public setStyles() {
+    public getStyles() {
         return {
             // CSS property names
             'border': '1px solid ' + this.config["color-button-primary"],

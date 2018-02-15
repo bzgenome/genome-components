@@ -1,4 +1,4 @@
-import {NgModule} from '@angular/core';
+import {ModuleWithProviders, NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {BzgTooltipComponent} from './bzg-tooltip/bzg-tooltip.component';
@@ -57,7 +57,7 @@ import {BzgUserComponent} from './bzg-user/bzg-user.component';
 
 
 export class BzgComponentsModule {
-  static forRoot(config: any): BzgComponentsModule {
+  static forRoot(config: any): ModuleWithProviders {
     return {
       ngModule: BzgComponentsModule,
       providers: [
