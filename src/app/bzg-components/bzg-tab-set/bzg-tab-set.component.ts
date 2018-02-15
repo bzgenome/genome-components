@@ -19,7 +19,7 @@ export class BzgTabSetComponent implements AfterContentInit {
     @ContentChildren(BzgTabItemComponent) tabs: QueryList<BzgTabItemComponent>;
 
     @Input() type: string = "primary";
-
+    @Output() public onSelectTab: EventEmitter<BzgTabItemComponent> = new EventEmitter();
 
     private _itemSelected: number;
 
@@ -54,6 +54,7 @@ export class BzgTabSetComponent implements AfterContentInit {
             this.tabs.toArray().forEach(tab => tab.active = false);
             tab.active = true;
             tab.onClick(null);
+            this.onSelectTab.emit(tab);
         }
     }
 

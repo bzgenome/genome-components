@@ -9,33 +9,60 @@ import {BzgComboComponent} from './bzg-combo/bzg-combo.component';
 import {BzgTabSetComponent} from './bzg-tab-set/bzg-tab-set.component';
 import {BzgModalComponent} from './bzg-modal/bzg-modal.component';
 import {BzgTabItemComponent} from './bzg-tab-item/bzg-tab-item.component';
+import {BzgDropdownDirective} from './bzg-dropdown/bzg-dropdown.directive';
+import {BzgDropdownToggleDirective} from './bzg-dropdown/bzg-dropdown-toggle.directive';
+import {BzgDropdownMenuDirective} from './bzg-dropdown/bzg-dropdown-menu.directive';
+import {BzgButtonComponent} from './bzg-button/bzg-button.component';
+import {BzgHeaderComponent} from './bzg-header/bzg-header.component';
+import {BzgUserComponent} from './bzg-user/bzg-user.component';
+
 
 @NgModule({
-    imports: [
-        CommonModule,
-        FormsModule
-    ],
-    exports: [
-        BzgModalComponent,
-        BzgTabSetComponent,
-        BzgTabItemComponent,
-        BzgStepSetComponent,
-        BzgStepItemComponent,
-        BzgTooltipComponent
-       // BzgComboComponent
-    ],
-    declarations: [
-        BzgModalComponent,
-        BzgTabSetComponent,
-        BzgTabItemComponent,
-        BzgStepSetComponent,
-        BzgStepItemComponent,
-        BzgTooltipComponent
-        // BzgComboComponent
-    ],
-    providers: [BzgOverlayManager],
+  imports: [
+    CommonModule,
+    FormsModule
+  ],
+  exports: [
+    BzgModalComponent,
+    BzgTabSetComponent,
+    BzgTabItemComponent,
+    // BzgComboComponent,
+    BzgStepSetComponent,
+    BzgStepItemComponent,
+    BzgTooltipComponent,
+    BzgDropdownDirective,
+    BzgDropdownToggleDirective,
+    BzgDropdownMenuDirective,
+    BzgButtonComponent,
+    BzgHeaderComponent,
+    BzgUserComponent
+  ],
+  declarations: [
+    BzgModalComponent,
+    BzgTabSetComponent,
+    BzgTabItemComponent,
+    // BzgComboComponent,
+    BzgStepSetComponent,
+    BzgStepItemComponent,
+    BzgTooltipComponent,
+    BzgDropdownDirective,
+    BzgDropdownToggleDirective,
+    BzgDropdownMenuDirective,
+    BzgButtonComponent,
+    BzgHeaderComponent,
+    BzgUserComponent
+  ],
+  providers: [BzgOverlayManager],
 })
 
 
 export class BzgComponentsModule {
+  static forRoot(config: any): BzgComponentsModule {
+    return {
+      ngModule: BzgComponentsModule,
+      providers: [
+        {provide: 'genomeConfig', useValue: config}
+      ]
+    };
+  }
 }

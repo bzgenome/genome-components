@@ -23,6 +23,7 @@ export class BzgTabItemComponent {
     }
 
     onClick($event) {
+        console.log('sucede');
         this.click.emit($event);
     }
 
