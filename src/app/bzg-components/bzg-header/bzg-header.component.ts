@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, Inject, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'bzg-header',
@@ -7,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BzgHeaderComponent implements OnInit {
 
+  @Output() changeLanguage: EventEmitter<any> = new EventEmitter<any>();
+  @Input() srcLogo?: string;
+  @Input() tagLogo?: string;
+  @Input() srcIcon?: string;
 
-  constructor() { }
+  constructor(@Inject('genomeConfig') private config: any) {
+
+  }
 
   ngOnInit() {
   }
 
+  public onChangeLanguage() {
+    this.changeLanguage.emit();
+  }
 }
