@@ -1,16 +1,16 @@
-<header class="bzg-header" role="banner">
-  <div class="bzg-header__icon">
-    <svg class="bzg-icon bzg-icon--contrast" width="64px" height="64px">
-      <use href="#icon"/>
+<header class="bzg-header" role="banner" [ngStyle]="getHeaderStyles()">
+  <div class="bzg-header__icon" [ngStyle]="getHeaderIconStyles()">
+    <svg class="bzg-icon--contrast" width="64px" height="64px">
+      <use [attr.xlink:href]="srcIcon"/>
     </svg>
   </div>
   <div class="bzg-header__container">
     <a href="#" class="bzg-logo-link">
-      <svg alt="Logotype" class="bzg-logo-link__img" viewBox="0 0 24 24">
+      <svg alt="Logotype" class="bzg-logo-link__img" viewBox="0 0 283.5 103.3">
         <use [attr.xlink:href]="srcLogo"></use>
       </svg>
-      <p class="bzg-logo-link__tag">Test</p>
+      <p class="bzg-logo-link__tag">{{tagText}}</p>
     </a>
-
+    <ng-content></ng-content>
   </div>
 </header>

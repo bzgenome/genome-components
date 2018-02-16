@@ -1,6 +1,6 @@
 {
   "name": "bzg-components",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -13,6 +13,7 @@
   },
   "private": false,
   "dependencies": {
+    "@angular-devkit/core": "^0.4.0",
     "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",
     "@angular/core": "^5.0.0",

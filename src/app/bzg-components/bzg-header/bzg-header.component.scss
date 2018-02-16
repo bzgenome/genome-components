@@ -9,10 +9,12 @@
   box-shadow: $bzg-shadow-s;
   display: flex;
   height: 64px;
+  background-image: linear-gradient(135deg, #dadada 0%, #444444 100%);
 }
 
 .bzg-header__icon {
-  background-image: linear-gradient(135deg, #23A2BC 0%, #54D4E4 100%);
+  fill: $white-color;
+  background-image: linear-gradient(135deg,#dadada 0%, #444444 100%);
   height: 64px;
   width: 64px;
 }
