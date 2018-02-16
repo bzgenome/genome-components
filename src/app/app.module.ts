@@ -10,12 +10,12 @@ const customGenomeConfiguration = {
   "color-text-secondary": "#B7B7B7",
   "color-button-primary": "#3e5c72",
   "color-button-secondary": "transparent",
-  "color-header-primary":"#e0e4cb",
-  "color-header-secondary":"#f7861e",
-  "color-header-fill":"#ffffff",
-  "color-icon-header-primary":"#62d2ea",
-  "color-icon-header-secondary":"#a4dbd8",
-  "color-icon-header-fill":"#ffffff"
+  "color-header-primary": "#e0e4cb",
+  "color-header-secondary": "#f7861e",
+  "color-header-fill": "#ffffff",
+  "color-icon-header-primary": "#62d2ea",
+  "color-icon-header-secondary": "#a4dbd8",
+  "color-icon-header-fill": "#ffffff"
 };
 
 @NgModule({
