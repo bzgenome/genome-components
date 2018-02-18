@@ -36,6 +36,17 @@ export class BzgUserComponent implements OnInit {
     };
   }
 
+  getInitials() {
+    if (this.fullName) {
+      const initials = this.fullName.replace(/[^a-zA-Z-0-9 ]/g, '').match(/\b\w/g);
+      if (initials.length > 2) {
+        initials.splice(2, initials.length);
+      }
+      return initials.join('');
+    }
+    return '<>';
+  }
+
 
   private  getRgba(color, opacity) {
     if (!/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(color)) {
