@@ -9,6 +9,7 @@ export class BzgButtonComponent implements OnInit {
 
   @Output() click: EventEmitter<any>;
   @Input() srcIcon?: string;
+  @Input() nameIcon?: string;
   @Input() text?: string;
 
   constructor(@Inject('genomeConfig') private config: any) {

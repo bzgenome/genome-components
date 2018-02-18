@@ -45,7 +45,7 @@
 <br/><br/><br/>
 <bzg-button (click)="exampleAction()"
             [text]="'this is my button'"
-            [srcIcon]="'assets/sprite.svg#headphones_16'">
+            [srcIcon]="'assets/sprite.svg#headphones'">
 </bzg-button>
 
 
@@ -53,3 +53,17 @@
             [text]="'this is other button'">
 </bzg-button>
 
+
+<bzg-icon name="align-middle"></bzg-icon>
+
+
+<bzg-icon name="align-middle" [size]="32"></bzg-icon>
+
+<bzg-icon name="align-middle"
+          [size]="100"
+          class="my-icon"></bzg-icon>
+
+
+<bzg-icon [srcIcon]="'assets/sprite.svg#headphones'"
+          [size]="100"
+          class="my-icon"></bzg-icon>

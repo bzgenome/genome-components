@@ -1,8 +1,11 @@
 <header class="bzg-header" role="banner" [ngStyle]="getHeaderStyles()">
   <div class="bzg-header__icon" [ngStyle]="getHeaderIconStyles()">
-    <svg *ngIf="srcIcon" class="bzg-header__icon--contrast" width="64px" height="64px">
-      <use [attr.xlink:href]="srcIcon"/>
-    </svg>
+    <bzg-icon *ngIf="srcIcon"
+              class="bzg-header__icon--contrast"
+              [srcIcon]="srcIcon"
+              [nameIcon]="nameIcon"
+              [size]="64"
+    ></bzg-icon>
     <div *ngIf="!srcIcon" class="bzg-header__icon--empty">
       <h3><></h3>
     </div>

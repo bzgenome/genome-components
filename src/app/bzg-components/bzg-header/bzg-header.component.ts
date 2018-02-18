@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Inject, Input, OnInit, Output} from '@angular/core';
+import {Component, Inject, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'bzg-header',
@@ -10,6 +10,7 @@ export class BzgHeaderComponent implements OnInit {
   @Input() srcLogo?: string;
   @Input() tagText?: string;
   @Input() srcIcon?: string;
+  @Input() nameIcon?: string;
   @Input() styleConfig?: any;
 
   constructor(@Inject('genomeConfig') private config: any) {

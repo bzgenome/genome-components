@@ -1,9 +1,11 @@
 <button class="bzg-button"
         [ngStyle]="getStyles()"
         (click)="triggerClick()">
-  <svg *ngIf="srcIcon" class="bzg-button__icon" width="26px" height="16px">
-    <use [attr.xlink:href]="srcIcon"/>
-  </svg>
+  <bzg-icon *ngIf="srcIcon || nameIcon"
+            class="bzg-button__icon"
+            [srcIcon]="srcIcon"
+            [nameIcon]="nameIcon"
+            [size]="16"></bzg-icon>
   <span *ngIf="getText()">{{getText()}}</span>
   <span *ngIf="!getText()">
          <ng-content></ng-content>

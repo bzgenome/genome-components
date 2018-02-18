@@ -6,6 +6,7 @@ import {AppComponent} from './app.component';
 import {BzgComponentsModule} from "./bzg-components/bzg-components.module";
 
 const customGenomeConfiguration = {
+  "icons-sprite-path": "assets/sprite.svg",
   "color-text-primary": "#555555",
   "color-text-secondary": "#B7B7B7",
   "color-button-primary": "#3e5c72",
