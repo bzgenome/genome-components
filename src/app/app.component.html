@@ -1,20 +1,51 @@
-<bzg-header [srcLogo]="'assets/sprite.svg#logo-bzg'"
-            [srcIcon]="'assets/sprite.svg#clock'"
-            [tagText]="'My App'">
-  <span>My header content</span>
+<bzg-header>
+  <bzg-user>
+  </bzg-user>
 </bzg-header>
+<br/><br/><br/>
 
 <bzg-header [srcLogo]="'assets/sprite.svg#logo-bzg'"
             [srcIcon]="'assets/sprite.svg#clock'"
-            [tagText]="'My App2'"
-            [styleConfig]="{'color-icon-header-primary': '#ea4f57','color-icon-header-secondary': '#a4dbd8','color-icon-header-fill': '#ffffff','color-header-primary': '#e0e4cb','color-header-secondary': '#f73f4c','color-header-fill': '#ffffff'}">
-  <span>My header content 2</span>
+            [tagText]="'My App'"
+            [styleConfig]="{}">
+  <bzg-user [email]="'scott.austin@mail.com'"
+            [fullName]="'Scott Austin'"
+            [styleConfig]="{}">
+  </bzg-user>
 </bzg-header>
+
+<br/><br/><br/>
+<bzg-header [srcLogo]="'assets/sprite.svg#logo-bzg'"
+            [srcIcon]="'assets/sprite.svg#clock'"
+            [tagText]="'My App'">
+  <bzg-user [email]="'scott.austin@mail.com'"
+            [fullName]="'Scott Austin'">
+  </bzg-user>
+</bzg-header>
+<br/><br/><br/>
+<bzg-header [srcLogo]="'assets/sprite.svg#logo-bzg'"
+            [srcIcon]="'assets/sprite.svg#clock'"
+            [tagText]="'My App2'"
+            [styleConfig]="{'color-icon-header-primary': '#c8d448','color-icon-header-secondary': '#799532','color-icon-header-fill': '#ffffff','color-header-primary': '#647815','color-header-secondary': '#647815','color-header-fill': '#ffffff'}">
+  <bzg-user [email]="'scott.austin@mail.com'"
+            [fullName]="'Scott Austin'"
+            [styleConfig]='{"color-user-info": "#ffffff","color-avatar": "#153d51","color-avatar-background": "#678934"}'>
+    <ul>
+      <li>1.sds</li>
+      <li>2.sds</li>
+    </ul>
+  </bzg-user>
+</bzg-header>
+<br/><br/><br/>
 
 <div>
   <h5 bzg-tooltip="Bzg Tooltip"> Bzg Components</h5>
 </div>
+
+<br/><br/><br/>
 <bzg-button (click)="exampleAction()"
             [text]="'this is my button'"
             [iconClass]="'bz-icon bz-icon-check-outline'">
 </bzg-button>
+
+

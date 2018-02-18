@@ -31,9 +31,12 @@ export class BzgHeaderComponent implements OnInit {
   }
 
   public getHeaderIconStyles() {
-    const primaryHeaderIconColor = this.styleConfig ? this.styleConfig["color-icon-header-primary"] : this.config["color-icon-header-primary"];
-    const secondaryHeaderIconColor = this.styleConfig ? this.styleConfig["color-icon-header-secondary"] : this.config["color-icon-header-secondary"];
-    const fillHeaderIconColor = this.styleConfig ? this.styleConfig["color-icon-header-fill"] : this.config["color-icon-header-fill"];
+    const primaryHeaderIconColor = this.styleConfig ?
+      this.styleConfig["color-icon-header-primary"] : this.config["color-icon-header-primary"];
+    const secondaryHeaderIconColor = this.styleConfig ?
+      this.styleConfig["color-icon-header-secondary"] : this.config["color-icon-header-secondary"];
+    const fillHeaderIconColor = this.styleConfig ?
+      this.styleConfig["color-icon-header-fill"] : this.config["color-icon-header-fill"];
     return {
       // CSS property names
       'fill': fillHeaderIconColor,

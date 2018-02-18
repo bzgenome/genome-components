@@ -1,14 +1,18 @@
-<div class="bzg-user">
-    <div class="bzg-user__info">
-        <p>Scott Austin</p>
-        <p>scott.austin@mail.com</p>
-    </div>
-    <div class="bzg-user__avatar">
-        <span class="bzg-user__avatar-label">SA</span>
-        <ul class="bzg-nav-panel">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-        </ul>
-    </div>
+<div class="bzg-user" bzgDropdown>
+  <div class="bzg-user__info">
+    <p [ngStyle]="getUserInfoStyles()">{{fullName}}</p>
+    <p [ngStyle]="getUserInfoStyles()">{{email}}</p>
+  </div>
+  <div class="bzg-user__avatar"
+       bzgDropdownToggle
+       [ngStyle]="getAvatarStyles()">
+    <span class="bzg-user__avatar-label">SA</span>
+  </div>
+
+  <div #ref
+       bzgDropdownMenu
+       [ngClass]="{'bzg-user__menu': ref.innerHTML.trim()}">
+    <ng-content></ng-content>
+  </div>
+
 </div>

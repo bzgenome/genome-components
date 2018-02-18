@@ -16,7 +16,6 @@ import {BzgButtonComponent} from './bzg-button/bzg-button.component';
 import {BzgHeaderComponent} from './bzg-header/bzg-header.component';
 import {BzgUserComponent} from './bzg-user/bzg-user.component';
 
-
 @NgModule({
   imports: [
     CommonModule,
@@ -57,11 +56,12 @@ import {BzgUserComponent} from './bzg-user/bzg-user.component';
 
 
 export class BzgComponentsModule {
-  static forRoot(config: any): ModuleWithProviders {
+  static forRoot(config?: any): ModuleWithProviders {
+    const genomeConfig = config || {};
     return {
       ngModule: BzgComponentsModule,
       providers: [
-        {provide: 'genomeConfig', useValue: config}
+        {provide: 'genomeConfig', useValue: genomeConfig}
       ]
     };
   }
