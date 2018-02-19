@@ -5,6 +5,11 @@ import {Component, EventEmitter, Inject, Input, OnInit, Output} from '@angular/c
   templateUrl: './bzg-button.component.html',
   styleUrls: ['./bzg-button.component.scss']
 })
+
+
+
+
+
 export class BzgButtonComponent implements OnInit {
 
   @Output() click: EventEmitter<any>;
@@ -12,7 +17,7 @@ export class BzgButtonComponent implements OnInit {
   @Input() nameIcon?: string;
   @Input() text?: string;
 
-  constructor(@Inject('genomeConfig') private config: any) {
+  constructor(@Inject('genomeConfig') protected config: any) {
     this.click = new EventEmitter<any>();
   }
 
@@ -32,9 +37,10 @@ export class BzgButtonComponent implements OnInit {
     return {
       // CSS property names
       'border': '1px solid ' + this.config["color-button-primary"],
-      'background-color': this.config["color-button-primary"],
-      'font-weight': 'normal',  // normal
+      'background-color': this.config["color-button-primary"]
     };
   }
 
 }
+
+

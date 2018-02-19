@@ -15,7 +15,9 @@ import {BzgDropdownMenuDirective} from './bzg-dropdown/bzg-dropdown-menu.directi
 import {BzgButtonComponent} from './bzg-button/bzg-button.component';
 import {BzgHeaderComponent} from './bzg-header/bzg-header.component';
 import {BzgUserComponent} from './bzg-user/bzg-user.component';
-import { BzgIconComponent } from './bzg-icon/bzg-icon.component';
+import {BzgIconComponent} from './bzg-icon/bzg-icon.component';
+import {BzgButtonSecondaryComponent} from "./bzg-button-secondary/bzg-button-secondary.component";
+import {BzgButtonPrimaryComponent} from "./bzg-button-primary/bzg-button-primary.component";
 
 @NgModule({
   imports: [
@@ -34,6 +36,8 @@ import { BzgIconComponent } from './bzg-icon/bzg-icon.component';
     BzgDropdownToggleDirective,
     BzgDropdownMenuDirective,
     BzgButtonComponent,
+    BzgButtonPrimaryComponent,
+    BzgButtonSecondaryComponent,
     BzgHeaderComponent,
     BzgUserComponent,
     BzgIconComponent
@@ -50,6 +54,8 @@ import { BzgIconComponent } from './bzg-icon/bzg-icon.component';
     BzgDropdownToggleDirective,
     BzgDropdownMenuDirective,
     BzgButtonComponent,
+    BzgButtonPrimaryComponent,
+    BzgButtonSecondaryComponent,
     BzgHeaderComponent,
     BzgUserComponent,
     BzgIconComponent

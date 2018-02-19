@@ -1,0 +1,12 @@
+@import '../variables.scss';
+@import '../bzg-button/bzg-button.component';
+
+.bzg-button {
+  color: rgba($bzg-color-button-primary, 1);
+  background-color: rgba($bzg-color-button-secondary, 1);
+  &:hover {
+    background-color: rgba($bzg-color-button-secondary, 0.85);
+    color: rgba($bzg-color-button-primary, 1);
+    box-shadow: $bzg-shadow-m;
+  }
+}
