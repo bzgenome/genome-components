@@ -2,7 +2,7 @@
     <div class="bzg-modal">
         <div class="bzg-modal__header">
             <span class="bzg-modal__header__title">{{title}}</span>
-            <i (click)="onCancel()" class="bzg-modal__header__close-btn bzg-icon bzg-icon-close-outline"></i>
+           <bzg-icon [nameIcon]="'close-outline'" (click)="onCancel()" ></bzg-icon>
         </div>
         <div  class="bzg-modal__content">
             <ng-content></ng-content>

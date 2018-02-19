@@ -1,12 +1,12 @@
 <header class="bzg-header" role="banner" [ngStyle]="getHeaderStyles()">
   <div class="bzg-header__icon" [ngStyle]="getHeaderIconStyles()">
-    <bzg-icon *ngIf="srcIcon"
+    <bzg-icon *ngIf="srcIcon || nameIcon"
               class="bzg-header__icon--contrast"
               [srcIcon]="srcIcon"
               [nameIcon]="nameIcon"
-              [size]="64"
+              [size]="50"
     ></bzg-icon>
-    <div *ngIf="!srcIcon" class="bzg-header__icon--empty">
+    <div *ngIf="!(srcIcon || nameIcon)" class="bzg-header__icon--empty">
       <h3><></h3>
     </div>
   </div>
