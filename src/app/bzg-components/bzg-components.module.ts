@@ -18,6 +18,7 @@ import {BzgUserComponent} from './bzg-user/bzg-user.component';
 import {BzgIconComponent} from './bzg-icon/bzg-icon.component';
 import {BzgButtonSecondaryComponent} from "./bzg-button-secondary/bzg-button-secondary.component";
 import {BzgButtonPrimaryComponent} from "./bzg-button-primary/bzg-button-primary.component";
+import { BzgLoadingComponent } from './bzg-loading/bzg-loading.component';
 
 @NgModule({
   imports: [
@@ -40,7 +41,8 @@ import {BzgButtonPrimaryComponent} from "./bzg-button-primary/bzg-button-primary
     BzgButtonSecondaryComponent,
     BzgHeaderComponent,
     BzgUserComponent,
-    BzgIconComponent
+    BzgIconComponent,
+    BzgLoadingComponent
   ],
   declarations: [
     BzgModalComponent,
@@ -58,7 +60,8 @@ import {BzgButtonPrimaryComponent} from "./bzg-button-primary/bzg-button-primary
     BzgButtonSecondaryComponent,
     BzgHeaderComponent,
     BzgUserComponent,
-    BzgIconComponent
+    BzgIconComponent,
+    BzgLoadingComponent
   ],
   providers: [BzgOverlayManager],
 })
