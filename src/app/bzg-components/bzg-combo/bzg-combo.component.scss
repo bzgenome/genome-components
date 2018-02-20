@@ -7,7 +7,7 @@
     padding: 2px 12px;
     color: rgb(53, 78, 94);
     height: 35px;
-    width: 100%;
+    width: calc(100% - 26px);
   }
   &__icons {
     position: absolute;
