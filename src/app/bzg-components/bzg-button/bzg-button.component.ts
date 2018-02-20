@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Inject, Input, OnInit, Output} from '@angular/core';
+import {Component, Inject, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'bzg-button',
@@ -7,26 +7,17 @@ import {Component, EventEmitter, Inject, Input, OnInit, Output} from '@angular/c
 })
 
 
-
-
-
 export class BzgButtonComponent implements OnInit {
 
-  @Output() click: EventEmitter<any>;
   @Input() srcIcon?: string;
   @Input() nameIcon?: string;
   @Input() text?: string;
 
   constructor(@Inject('genomeConfig') protected config: any) {
-    this.click = new EventEmitter<any>();
   }
 
   ngOnInit() {
 
-  }
-
-  public triggerClick() {
-    this.click.emit();
   }
 
   public getText() {
