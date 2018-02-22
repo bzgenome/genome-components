@@ -40,7 +40,7 @@ export class BzgDropdownMenuDirective implements OnInit, OnDestroy {
         const target: EventTarget = event.target;
         if (target instanceof HTMLElement && target.hasAttribute('bzgDropdownToggle')) {
             // Ignore dropdownToggle element, even if it's outside the menu.
-            return;
+            // return;
         }
         const isInsideClick = this.elementRef.nativeElement.contains(target);
         if (!isInsideClick || target instanceof HTMLElement && target.hasAttribute('href')) {
