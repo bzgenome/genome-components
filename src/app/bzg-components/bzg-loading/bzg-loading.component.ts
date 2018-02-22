@@ -1,9 +1,7 @@
 import {
-    Component,
-    ViewContainerRef,
-    Input,
-    ViewEncapsulation,
-    OnInit
+  Component,
+  Input,
+  OnInit
 } from '@angular/core';
 @Component({
   selector: 'bzg-loading',
@@ -12,8 +10,10 @@ import {
 })
 export class BzgLoadingComponent implements OnInit {
 
- @Input() text: string;
-  constructor() { }
+  @Input() text: string;
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
