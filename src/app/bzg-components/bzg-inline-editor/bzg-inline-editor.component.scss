@@ -1,0 +1,110 @@
+@import '../variables.scss';
+
+.bzg-inline-editor {
+  width: 100%;
+  display: flex;
+  height: 37px;
+  &__text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__edit {
+    height: 100%;
+    width: 100%;
+    &__input {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      input {
+        width: calc(100% - 8px);
+        padding: 0 4px;
+      }
+    }
+  }
+  &__actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 67px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: flex-end;
+    position: relative;
+    align-items: center;
+
+    &__btn {
+      height: 100%;
+      background-color: rgba(51, 255, 230, 0.55);
+      display: flex;
+      align-items: center;
+      margin: 0 0 0 2px;
+      padding: 0 4px;
+      cursor: pointer;
+    }
+    &__btn-icon {
+      height: 16px;
+      width: 16px;
+      display: inline-block;
+      color: #3a4d5a;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      cursor: pointer;
+      transition: all ease-in 250ms;
+      &.init {
+        background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iRWJlbmVfM19Lb3BpZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4Ig0KCSB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1OSAzMS45IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1OSAzMS45OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxLjU7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fQ0KPC9zdHlsZT4NCjxwb2x5bGluZSBjbGFzcz0ic3QwIiBwb2ludHM9IjU3LjYsMS44IDI5LjUsMjkuOCAyOS41LDI5LjggMS41LDEuOCAiLz4NCjwvc3ZnPg0K");
+      }
+      &.trigger {
+        background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iRWJlbmVfM19Lb3BpZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4Ig0KCSB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1OSAzMS45IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1OSAzMS45OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxLjU7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fQ0KPC9zdHlsZT4NCjxwb2x5bGluZSBjbGFzcz0ic3QwIiBwb2ludHM9IjU3LjYsMS44IDI5LjUsMjkuOCAyOS41LDI5LjggMS41LDEuOCAiLz4NCjwvc3ZnPg0K");
+      }
+      &.cancel {
+        background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iRWJlbmVfM19Lb3BpZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4Ig0KCSB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1OSAzMS45IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1OSAzMS45OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxLjU7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fQ0KPC9zdHlsZT4NCjxwb2x5bGluZSBjbGFzcz0ic3QwIiBwb2ludHM9IjU3LjYsMS44IDI5LjUsMjkuOCAyOS41LDI5LjggMS41LDEuOCAiLz4NCjwvc3ZnPg0K");
+      }
+    }
+  }
+}
+
+.bzg-fixed-tooltip {
+  width: 100%;
+  top: 38px;
+  position: absolute;
+  &__contents {
+    color: $white-color;
+    border: 1px solid $error-tooltip-color;
+    padding: 16px;
+    background-color: $error-tooltip-color;
+    border-radius: 4px;
+    width: 90%;
+    font-size: 15px;
+  }
+
+  &__down-arrow {
+    height: 10px;
+  }
+
+  &__down-arrow:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 45%;
+    top: 5px;
+    background-color: $error-tooltip-color;
+    border-left: 1px solid $error-tooltip-color;
+    border-bottom: 1px solid $error-tooltip-color;
+    transform: rotate(-45deg);
+  }
+}
+
+.bzg-input-text {
+  border: 1px solid #cacaca;
+  color: rgb(53, 78, 94);
+  height: 35px;
+  &--error {
+    border: 1px solid $error-tooltip-color;
+  }
+}

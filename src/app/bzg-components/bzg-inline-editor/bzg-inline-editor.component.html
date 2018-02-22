@@ -1,0 +1,36 @@
+
+<div class="bzg-inline-editor">
+  <span *ngIf="!isEditing" class="bzg-inline-editor__text">{{value}}</span>
+  <form *ngIf="isEditing"
+        class="bzg-inline-editor__edit"
+        [formGroup]="form">
+    <div class="bzg-inline-editor__edit__input">
+      <input id="value"
+             formControlName="value"
+             [ngClass]="{'bzg-input-text': true, 'bzg-input-text--error': isFieldInvalid('value')}">
+      <!--Popover-->
+      <div *ngIf="isFieldInvalid('value')"
+           class="bzg-fixed-tooltip">
+        <div class='bzg-fixed-tooltip__down-arrow'></div>
+        <div class='bzg-fixed-tooltip__contents'>{{regexError}}</div>
+      </div>
+    </div>
+  </form>
+  <div class="bzg-inline-editor__actions">
+    <div *ngIf="!isEditing"
+         class="bzg-inline-editor__actions__btn"
+         (click)="initEdition()">
+      <i class="bzg-inline-editor__actions__btn-icon init"></i>
+    </div>
+    <div *ngIf="isEditing"
+         class="bzg-inline-editor__actions__btn"
+         (click)="triggerChange()">
+      <i class="bzg-inline-editor__actions__btn-icon trigger"></i>
+    </div>
+    <div *ngIf="isEditing"
+         class="bzg-inline-editor__actions__btn"
+         (click)="cancelEdition()">
+      <i class="bzg-inline-editor__actions__btn-icon cancel"></i>
+    </div>
+  </div>
+</div>

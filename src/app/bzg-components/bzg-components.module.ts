@@ -1,6 +1,6 @@
 import {ModuleWithProviders, NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BzgTooltipComponent} from './bzg-tooltip/bzg-tooltip.component';
 import {BzgOverlayManager} from './bzg-tooltip/bzg-overlay-manager';
 import {BzgStepSetComponent} from './bzg-step-set/bzg-step-set.component';
@@ -18,12 +18,14 @@ import {BzgUserComponent} from './bzg-user/bzg-user.component';
 import {BzgIconComponent} from './bzg-icon/bzg-icon.component';
 import {BzgButtonSecondaryComponent} from "./bzg-button-secondary/bzg-button-secondary.component";
 import {BzgButtonPrimaryComponent} from "./bzg-button-primary/bzg-button-primary.component";
-import { BzgLoadingComponent } from './bzg-loading/bzg-loading.component';
+import {BzgLoadingComponent} from './bzg-loading/bzg-loading.component';
+import {BzgInlineEditorComponent} from './bzg-inline-editor/bzg-inline-editor.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     BzgModalComponent,
@@ -42,6 +44,7 @@ import { BzgLoadingComponent } from './bzg-loading/bzg-loading.component';
     BzgHeaderComponent,
     BzgUserComponent,
     BzgIconComponent,
+    BzgInlineEditorComponent,
     BzgLoadingComponent
   ],
   declarations: [
@@ -61,6 +64,7 @@ import { BzgLoadingComponent } from './bzg-loading/bzg-loading.component';
     BzgHeaderComponent,
     BzgUserComponent,
     BzgIconComponent,
+    BzgInlineEditorComponent,
     BzgLoadingComponent
   ],
   providers: [BzgOverlayManager],
