@@ -20,6 +20,7 @@ import {BzgButtonSecondaryComponent} from "./bzg-button-secondary/bzg-button-sec
 import {BzgButtonPrimaryComponent} from "./bzg-button-primary/bzg-button-primary.component";
 import {BzgLoadingComponent} from './bzg-loading/bzg-loading.component';
 import {BzgInlineEditorComponent} from "./bzg-inline-editor/bzg-inline-editor.component";
+import { BzgUserAvatarComponent } from './bzg-user-avatar/bzg-user-avatar.component';
 
 @NgModule({
   imports: [
@@ -45,7 +46,8 @@ import {BzgInlineEditorComponent} from "./bzg-inline-editor/bzg-inline-editor.co
     BzgUserComponent,
     BzgIconComponent,
     BzgLoadingComponent,
-    BzgInlineEditorComponent
+    BzgInlineEditorComponent,
+    BzgUserAvatarComponent
   ],
   declarations: [
     BzgModalComponent,
@@ -65,7 +67,8 @@ import {BzgInlineEditorComponent} from "./bzg-inline-editor/bzg-inline-editor.co
     BzgUserComponent,
     BzgIconComponent,
     BzgLoadingComponent,
-    BzgInlineEditorComponent
+    BzgInlineEditorComponent,
+    BzgUserAvatarComponent
   ],
   providers: [BzgOverlayManager],
 })

@@ -1,0 +1,22 @@
+@import '../base.scss';
+
+.bzg-user-avatar {
+  align-items: center;
+  background-color: rgba(255, 255, 255, .2);
+  border: 1px solid rgba(255, 255, 255, .7);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  position: relative;
+  transition: all .3s ease-in-out;
+  width: 48px;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, .35) !important;
+  }
+  &__label {
+    color: $white-color;
+  }
+}
