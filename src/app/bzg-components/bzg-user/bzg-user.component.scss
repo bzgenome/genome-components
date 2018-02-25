@@ -36,7 +36,7 @@
       border-radius: $bzg-border-radius-m;
       box-shadow: $bzg-shadow-xs;
       color: $white-color;
-      padding: $bzg-space-inset-s;
+      padding: 0.8rem 0 ;
       position: absolute;
       right: 0;
       opacity: 1;
@@ -45,12 +45,7 @@
       min-width: 100%;
       top: 112%;
       z-index: 1;
-      ul{
-        margin: 0;
-        li{
-          color:red;
-        }
-      }
+
       &:before,
       &:after {
         position: absolute;
