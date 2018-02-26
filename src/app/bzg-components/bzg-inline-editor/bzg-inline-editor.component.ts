@@ -32,7 +32,7 @@ export class BzgInlineEditorComponent implements OnInit {
 
   triggerChange() {
     if (this.form.valid) {
-      this.value = this.form.value['bzg-input'];
+      this.value = this.form.value['value'];
       this.changeValue.emit(this.value);
       this.isEditing = false;
     } else {
