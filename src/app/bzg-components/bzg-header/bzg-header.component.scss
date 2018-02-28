@@ -1,4 +1,4 @@
-@import '../variables.scss';
+@import '../bzg-variables';
 
 @mixin background-linear-gradient($gradient, $fallback) {
   background-color: $fallback;

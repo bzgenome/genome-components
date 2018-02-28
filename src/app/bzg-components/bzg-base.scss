@@ -1,9 +1,10 @@
-@import 'variables.scss';
+@import 'bzg-variables';
 
 *,
 *:after,
 *:before {
   box-sizing: inherit;
+  outline: none;
 }
 
 ol,
