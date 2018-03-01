@@ -1,11 +1,14 @@
 <div *ngIf="showModal" class="bzg-modal__overlay">
-    <div class="bzg-modal">
-        <div class="bzg-modal__header">
-            <span class="bzg-modal__header__title">{{title}}</span>
-           <bzg-icon [nameIcon]="'close-outline'" (click)="onCancel()" ></bzg-icon>
-        </div>
-        <div  class="bzg-modal__content">
-            <ng-content></ng-content>
-        </div>
+  <div class="bzg-modal">
+    <div class="bzg-modal__header">
+      <span class="bzg-modal__header__title">{{title}}</span>
+      <bzg-icon class="bzg-modal__header__close-btn"
+                [nameIcon]="'close-outline'"
+                (click)="onCancel()">
+      </bzg-icon>
     </div>
+    <div class="bzg-modal__content">
+      <ng-content></ng-content>
+    </div>
+  </div>
 </div>

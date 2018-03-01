@@ -1,3 +1,5 @@
+@import '../bzg-base';
+
 .bzg-modal__overlay {
   position: fixed;
   top: 0;
@@ -37,8 +39,12 @@
       font-weight: 600;
     }
     &__close-btn {
-      font-size: 16px;
+      color: rgba($bzg-color-text-primary, 0.7);
+      transition: all 0.2s ease-in-out;
       cursor: pointer;
+      &:hover {
+        color: rgba($bzg-color-text-primary, 1);
+      }
     }
   }
   &__content {
