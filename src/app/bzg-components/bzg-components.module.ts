@@ -91,3 +91,6 @@ export class BzgComponentsModule {
     };
   }
 }
+
+export * from './bzg-forms/bzgFormGroup';
+export * from './bzg-forms/bzgFormBuilder';

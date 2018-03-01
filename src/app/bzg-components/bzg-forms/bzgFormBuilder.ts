@@ -1,6 +1,6 @@
 import {Injectable} from "@angular/core";
 import {FormBuilder} from "@angular/forms";
-import {BzgFormGroup} from "./bzgForm";
+import {BzgFormGroup} from "./bzgFormGroup";
 
 @Injectable()
 export class BzgFormBuilder {
