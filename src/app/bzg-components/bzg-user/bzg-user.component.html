@@ -9,7 +9,7 @@
   </bzg-user-avatar>
   <div #ref
        bzgDropdownMenu
-       [ngClass]="{'bzg-user__menu': ref.innerHTML.trim()}">
+       [ngClass]="{'bzg-user__menu': ref.children.length > 0}">
     <ng-content></ng-content>
   </div>
 
