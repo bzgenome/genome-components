@@ -1,7 +1,20 @@
 {
   "name": "bzg-components",
-  "version": "0.0.50",
+  "version": "0.0.51",
   "license": "MIT",
+  "homepage": "",
+  "repository": "https://github.com/bzgenome/genome-components",
+  "keywords": [
+    "Genome",
+    "Components",
+    "Angular",
+    "Library"
+  ],
+  "author": {
+    "name": "Bzgenome",
+    "email": "bzgenome@gmail.com",
+    "url": ""
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
