@@ -31,13 +31,12 @@ export class BzgStepSetComponent implements AfterContentInit {
         return this._itemSelected;
 
     }
-
     ngAfterContentInit() {
-
-        let activeSteps = this.steps.filter((step) => step.active);
+        const activeSteps = this.steps.filter((step) => step.active);
         if (activeSteps.length === 0) {
             this.selectStep(this.steps.first);
         }
+      this.selectStepById(this._itemSelected);
 
     }
 
