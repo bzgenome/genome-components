@@ -74,9 +74,7 @@ import {BzgFormBuilder} from "./bzg-forms/bzgFormBuilder";
     BzgUserAvatarComponent,
     BzgBounceComponent
   ],
-  providers: [
-    BzgOverlayManager,
-    BzgFormBuilder],
+  providers: [/* Don't add the services here */],
 })
 
 
@@ -86,6 +84,8 @@ export class BzgComponentsModule {
     return {
       ngModule: BzgComponentsModule,
       providers: [
+        BzgOverlayManager,
+        BzgFormBuilder,
         {provide: 'genomeConfig', useValue: genomeConfig}
       ]
     };
