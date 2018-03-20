@@ -55,7 +55,7 @@ export class BzgMasonryComponent implements OnInit, OnDestroy {
     }
 
 
-    this._msnry = new masonry(this._element.nativeElement, this.options);
+    this._msnry = new masonry.default(this._element.nativeElement, this.options);
 
     this._msnry.on('layoutComplete', (items: any) => {
       this.layoutComplete.emit(items);
