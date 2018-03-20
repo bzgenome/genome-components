@@ -23,6 +23,8 @@ import {BzgInlineEditorComponent} from "./bzg-inline-editor/bzg-inline-editor.co
 import {BzgUserAvatarComponent} from './bzg-user-avatar/bzg-user-avatar.component';
 import {BzgBounceComponent} from './bzg-bounce/bzg-bounce.component';
 import {BzgFormBuilder} from "./bzg-forms/bzgFormBuilder";
+import {BzgMasonryBrickDirective} from "./bzg-masonry/bzg-masonry-brick.directive";
+import {BzgMasonryComponent} from "./bzg-masonry/bzg-masonry.component";
 
 @NgModule({
   imports: [
@@ -50,7 +52,9 @@ import {BzgFormBuilder} from "./bzg-forms/bzgFormBuilder";
     BzgLoadingComponent,
     BzgInlineEditorComponent,
     BzgUserAvatarComponent,
-    BzgBounceComponent
+    BzgBounceComponent,
+    BzgMasonryBrickDirective,
+    BzgMasonryComponent
   ],
   declarations: [
     BzgModalComponent,
@@ -72,7 +76,9 @@ import {BzgFormBuilder} from "./bzg-forms/bzgFormBuilder";
     BzgLoadingComponent,
     BzgInlineEditorComponent,
     BzgUserAvatarComponent,
-    BzgBounceComponent
+    BzgBounceComponent,
+    BzgMasonryBrickDirective,
+    BzgMasonryComponent
   ],
   providers: [/* Don't add the services here */],
 })

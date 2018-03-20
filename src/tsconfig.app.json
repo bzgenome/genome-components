@@ -3,20 +3,8 @@
   "compilerOptions": {
     "outDir": "../out-tsc/app",
     "baseUrl": "./",
-    "declaration": true,
-    "strictNullChecks": true,
-    "noImplicitAny": true,
     "module": "es2015",
-    "sourceMap": true,
-    "skipLibCheck": true,
-    "types": [],
-    "paths": {
-      "@angular/core": ["node_modules/@angular/core"],
-      "rxjs/*": ["node_modules/rxjs/*"]
-    }
-  },
-  "angularCompilerOptions": {
-    "strictMetadataEmit": true
+    "types": []
   },
   "exclude": [
     "test.ts",
