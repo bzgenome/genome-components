@@ -1,5 +1,13 @@
 @import '../bzg-base';
 
+@media only screen and (min-width: 100px) and (max-width: 500px) {
+  .bzg-user {
+    &__info {
+      display: none;
+    }
+  }
+}
+
 .bzg-user {
   align-items: center;
   display: flex;
