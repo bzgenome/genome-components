@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BzgComboComponent } from './bzg-combo.component';
 
-describe('BzgComboComponent', () => {
+xdescribe('BzgComboComponent', () => {
   let component: BzgComboComponent;
   let fixture: ComponentFixture<BzgComboComponent>;
 

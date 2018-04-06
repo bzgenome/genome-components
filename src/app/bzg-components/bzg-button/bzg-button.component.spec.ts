@@ -1,6 +1,7 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { BzgButtonComponent } from './bzg-button.component';
+import {BzgButtonComponent} from './bzg-button.component';
+import {BzgIconComponent} from "../bzg-icon/bzg-icon.component";
 
 describe('BzgButtonComponent', () => {
   let component: BzgButtonComponent;
@@ -8,9 +9,17 @@ describe('BzgButtonComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BzgButtonComponent ]
+      declarations: [
+        BzgButtonComponent,
+        BzgIconComponent
+      ],
+      providers: [
+        {
+          provide: 'genomeConfig', useValue: {}
+        }
+      ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

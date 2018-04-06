@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BzgButtonSecondaryComponent } from './bzg-button-secondary.component';
 
-describe('BzgButtonSecondaryComponent', () => {
+xdescribe('BzgButtonSecondaryComponent', () => {
   let component: BzgButtonSecondaryComponent;
   let fixture: ComponentFixture<BzgButtonSecondaryComponent>;
 

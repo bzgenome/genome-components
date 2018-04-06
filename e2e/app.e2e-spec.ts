@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('bzg-components App', () => {
+xdescribe('bzg-components App', () => {
   let page: AppPage;
 
   beforeEach(() => {

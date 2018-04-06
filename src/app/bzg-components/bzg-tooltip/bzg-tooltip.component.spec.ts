@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BzgTooltipComponent } from './bzg-tooltip.component';
 
-describe('BzgTooltipComponent', () => {
+xdescribe('BzgTooltipComponent', () => {
   let component: BzgTooltipComponent;
   let fixture: ComponentFixture<BzgTooltipComponent>;
 

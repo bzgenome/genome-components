@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BzgStepSetComponent } from './bzg-step-set.component';
 
-describe('BzgStepSetComponent', () => {
+xdescribe('BzgStepSetComponent', () => {
   let component: BzgStepSetComponent;
   let fixture: ComponentFixture<BzgStepSetComponent>;
 
