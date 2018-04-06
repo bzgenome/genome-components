@@ -2,7 +2,8 @@
 [![NPM](https://nodei.co/npm/bzg-components.png)](https://npmjs.org/package/bzg-components)
 
 
-#### .
+#### 
+
 [![Build Status](https://travis-ci.org/bzgenome/genome-components.png?branch=master)](https://travis-ci.org/bzgenome/genome-components)
 
 
