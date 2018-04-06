@@ -1,5 +1,6 @@
 # Genome components
 
+[![Build Status](https://travis-ci.org/bzgenome/genome-components.png?branch=master)](https://travis-ci.org/bzgenome/genome-components)
 
 ### Install
 
